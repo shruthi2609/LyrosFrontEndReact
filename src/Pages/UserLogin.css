@@ -1,0 +1,41 @@
+.adminSignupForm {
+    
+    height: 50px;
+    width: 100vw;
+    background-size: cover;
+    text-align: center;
+}
+.errormsg{
+    padding-top: 10px;
+}
+.adminSignupFormcontainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.formBackGround {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtF3Xi8fM99n5nhfISC88KDqF6szL5_ezpAwfcvR7hbJ5zfxoZStdjTEwYXafYfA_-ULs&usqp=CAU");
+    width: 250px;
+    padding: 30px;
+    background-size: cover;
+    margin: 10px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.createbutton {
+
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.createbutton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
