@@ -8,7 +8,7 @@ function ContactManager(){
     const [msg,setMsg]=useState("")
    
     useEffect(()=>{
-        axios.get("http://localhost:3001/v1/contactdetails",{
+        axios.get("https://lyrosbackendexpress.onrender.com/v1/contactdetails",{
             headers:{
            
                 Authorization:'Bearer '+localStorage.getItem("jwttoken")
@@ -21,7 +21,7 @@ function ContactManager(){
     },[])
 
     useEffect(()=>{
-        axios.get("http://localhost:3001/v1/contactdetails",{
+        axios.get("https://lyrosbackendexpress.onrender.com/v1/contactdetails",{
             headers:{
                 "Access-Control-Allow-Origin" : "*",
                 Authorization:'Bearer '+localStorage.getItem("jwttoken")
@@ -39,7 +39,7 @@ function ContactManager(){
     const handleCreate=(e)=>{
         e.preventDefault()
         const obj={cname:fname,cemail:email,cno:phone}
-        axios.post("http://localhost:3001/v1/user",obj,{
+        axios.post("https://lyrosbackendexpress.onrender.com/v1/user",obj,{
             headers:{
                 Authorization:'Bearer '+localStorage.getItem("jwttoken")
             }
@@ -49,7 +49,7 @@ function ContactManager(){
         })
     }
     const handleDelete=(e,cname)=>{
-        axios.delete(`http://localhost:3001/v1/user/${cname}`,{
+        axios.delete(`https://lyrosbackendexpress.onrender.com/v1/user/${cname}`,{
             headers:{
                 Authorization:'Bearer '+localStorage.getItem("jwttoken")
             }

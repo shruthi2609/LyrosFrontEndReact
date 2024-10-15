@@ -1,8 +1,8 @@
 import UserSignUp from './Pages/UserSignUp.js';
 import UserLogin from './Pages/UserLogin.js';
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-// import ContactManager from './ContactManager/ContactManagerComponent.js';
-import ContactManagerCookie from './ContactManager/ContactManagerComponentCookies.js';
+import ContactManager from './ContactManager/ContactManagerComponent.js';
+
 function App() {
   return (
     
@@ -12,7 +12,7 @@ function App() {
 <Routes>
   <Route path="/signup" element={<UserSignUp></UserSignUp>}></Route>
   <Route path="/signin" element={<UserLogin></UserLogin>}></Route>
-  <Route path="/managecontacts" element={<ContactManagerCookie></ContactManagerCookie>}></Route>
+  <Route path="/managecontacts" element={<ContactManager></ContactManager>}></Route>
 </Routes>
 </BrowserRouter>
  </div>
